@@ -126,3 +126,17 @@ function checkForWinnerHelper(player) {
 
     return false;
 }
+// Reset the game
+function resetGame() {
+    // Clear the board
+    squares.forEach(square => {
+        square.innerHTML = '';
+        square.classList.remove('x');
+        square.classList.remove('o');
+    });
+
+    // Reset the game state
+    currentPlayer = 'x';
+    gameOver = false;
+    board = ['', '', '', '', '', '', '', '', ''];
+}
