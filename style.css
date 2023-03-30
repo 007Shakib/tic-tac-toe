@@ -1,0 +1,30 @@
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.square {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: #ddd;
+}
+
+.x {
+    color: blue;
+}
+
+.o {
+    color: red;
+}
